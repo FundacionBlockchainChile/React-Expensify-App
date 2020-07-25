@@ -1,48 +1,45 @@
-// OBJECT DESCTRUCTRING *************************************
-
-// console.log('destructuring..')
+//
+// Object destructuring
+//
 
 // const person = {
-//     // name: 'pies',
-//     age: 7,
-//     location: {
-//         city: 'Santiago',
-//         temp: 15
-//     }
-// }
+//   name: 'Andrew',
+//   age: 27,
+//   location: {
+//     city: 'Philadelphia',
+//     temp: 88
+//   }
+// };
 
-// const { name:firstName = 'Anonymous',  age} = person
+// const { name: firstName = 'Anonymous', age } = person;
+// console.log(`${firstName} is ${age}.`);
 
-// console.log(`${firstName} is ${age} old...`);
-
-// const { city, temp: temperature } = person.location
-
+// const { city, temp: temperature } = person.location;
 // if (city && temperature) {
-//   console.log(`Ìt´s ${temperature} in ${city}`);
+//   console.log(`It's ${temperature} in ${city}.`);
 // }
-
 
 // const book = {
-//     title: 'Ego is the enemy',
-//     author: 'Ryan Holiday',
-//     publisher: {
-//         // name: 'Penguin'
-//     }
-// }
+//   title: 'Ego is the Enemy',
+//   author: 'Ryan Holiday',
+//   publisher: {
+//     // name: 'Penguin'
+//   }
+// };
 
-// const { name: publisherName = 'Self-Published' } = book.publisher
+// const { name: publisherName = 'Self-Published' } = book.publisher;
 
-// console.log(publisherName)
+// console.log(publisherName); // Penguin, Self-Published
 
-// ARRAY DESTRUCTURING *****************************************
+//
+// Array destructuring
+//
 
-const address = ['1299 s Junior Street', 'Philadelphia', , '19147'];
-const [, city, state = 'New York'] = address
-console.log(`You are in ${city} ${state}`)
+// const address = ['1299 S Juniper Street', 'Philadelphia', 'Pennsylvania', '19147'];
+// const [, city, state = 'New York'] = address;
+// console.log(`You are in ${city} ${state}.`);
 
-const item = ['Coffe (hot)', '$2.00', '$2.50', '$2.75']
-const [coffe, small, medium, tall] = item
-console.log(`${coffe} cost ${medium}`)
+const item = ['Coffee (iced)', '$3.00', '$3.50', '$3.75'];
+const [itemName, , mediumPrice] = item;
 
-
-
+console.log(`A medium ${itemName} costs ${mediumPrice}`);
